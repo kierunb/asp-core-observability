@@ -1,0 +1,31 @@
+// endpoints:
+prometheus: http://localhost:9090/
+grafana:	http://localhost:3000/
+seq:		http://localhost:5341/
+
+
+//logging, seq:
+https://github.com/NLog/NLog/wiki/How-to-use-structured-logging
+https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0
+https://docs.datalust.co/docs/overview
+
+
+//metrics:
+https://github.com/prometheus-net/prometheus-net
+https://dale-bingham-cingulara.medium.com/net-core-web-api-metrics-with-prometheus-and-grafana-fe84a52d9843
+package: dotnet add package prometheus-net.AspNetCore
+grafana dashboards: 10427 (metrics), 10915 (controllers)
+
+ETW Session, Providers and Events
+http://labs.criteo.com/2018/07/grab-etw-session-providers-and-events/
+
+
+//opentelemetry:
+https://github.com/open-telemetry/opentelemetry-dotnet
+https://docs.microsoft.com/en-us/dotnet/core/diagnostics/distributed-tracing-collection-walkthroughs
+https://www.mytechramblings.com/posts/getting-started-with-opentelemetry-and-dotnet-core/
+
+
+
+// docker
+seq: docker run --name seq -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest
